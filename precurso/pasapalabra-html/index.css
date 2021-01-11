@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgb(38, 86, 156), rgb(14, 50, 105));
+}
+
+.gameSite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: rgb(219, 230, 255);
+  width: fit-content;
+  height: 100%;
+}
+
+.game {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 400px;
+  max-width: 1000px;
+  border-bottom: 2px solid rgb(134, 153, 197);
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 5px 5px rgb(14, 50, 105);
+}
+
+#pasapalabraPlay {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#playButton {
+  padding: 10px;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(24, 68, 134);
+  color: rgb(219, 230, 255);
+  border: 2px solid rgb(219, 230, 255);
+  border-radius: 15px;
+  font-size: 20px;
+  outline: inherit;
+}
+
+#playButton:hover {
+  background-color: rgb(255, 180, 0);
+  font-size: 22px;
+}
+
+#playButton:active {
+  background-color: rgb(127, 184, 0);
+  color: white;
+}
+
+#enterName {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+label {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#submitName {
+  background-color: rgb(24, 68, 134);
+  color: rgb(219, 230, 255);
+  border: 2px solid rgb(219, 230, 255);
+  border-radius: 10px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 20px;
+  outline: inherit;
+}
+
+#submitName:hover {
+  background-color: rgb(233, 143, 41);
+}
+
+#submitName:active {
+  background-color: rgb(16, 49, 100);
+  color: white;
+}
+
+#playerData {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 400px;
+  color: rgb(219, 230, 255);
+}
+
+#countDown {
+  width: 90px;
+  height: 90px;
+  background-color: rgb(24, 68, 134);
+  border: 3px solid rgb(255, 180, 0);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 30px;
+}
+
+#userName {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 30px;
+  width: auto;
+  color: rgb(255, 180, 0);
+  display: none;
+}
+
+#containerPoints {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(24, 68, 134);
+  border: 3px solid rgb(255, 180, 0);
+  border-radius: 50%;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 22px;
+  line-height: 0;
+}
+
+#panelLetters {
+  padding: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(255, 180, 0);
+  background-color: rgb(24, 68, 134);
+  border-radius: 20px;
+}
+
+.letters {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(14, 50, 105);
+  border: 2px solid rgb(219, 230, 255);
+  color: rgb(219, 230, 255);
+  border-radius: 50%;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 20px;
+}
+
+.displayQuestions {
+  margin: 10px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 25px;
+}
+
+#questions {
+  color: rgb(255, 180, 0);
+}
+
+#alerts {
+  color: rgb(246, 81, 29);
+  line-height: 10px;
+}
+
+#formAnswer,
+.containerAnswer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerInput {
+  height: 25px;
+  width: 200px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: 3px solid rgb(255, 180, 0);
+  border-radius: 5px;
+  background-color: rgb(219, 230, 255);
+}
+
+.sendAnswer {
+  margin: 5px;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(24, 68, 134);
+  color: rgb(219, 230, 255);
+  border: 2px solid rgb(219, 230, 255);
+  border-radius: 10px;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 20px;
+  outline: inherit;
+}
+
+.sendAnswer:hover {
+  background-color: rgb(233, 143, 41);
+}
+
+.sendAnswer:active {
+  background-color: rgb(16, 49, 100);
+  color: white;
+}
+
+#ranking {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  font-family: "Ubuntu Condensed", sans-serif;
+  text-shadow: 2px 2px rgb(8, 34, 75);
+}
+
+#playersRanking {
+  padding: 10px;
+  background-color: rgb(114, 132, 173);
+  border-radius: 15px;
+  width: 250px;
+  text-shadow: none;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}

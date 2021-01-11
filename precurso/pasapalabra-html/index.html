@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+   <title>Document</title>
+</head>
+<body id="bla">
+    <div class="gameSite">
+        <section class="game">
+            <div>
+                <h1>PASAPALABRA</h1>
+            </div>
+            <div id="pasapalabraPlay">
+                <button id="playButton">PLAY</button>
+                <form id="enterName">
+                    <label for="inputName">Nickname:</label>
+                    <input class="playerInput" id="inputName" type="text" autocomplete="off" required>
+                    <button id="submitName">OK</button>
+                </form>
+            </div>
+            <div id="playerData">
+                    <div id="countDown">200s</div>
+                    <div>
+                        <h2 id="userName">User name</h2>
+                    </div>
+                    <div id="containerPoints">
+                        <p>Points</p>
+                        <p id="userPoints">0p</p>
+                    </div>
+            </div>
+            <div id="panelLetters">
+                <div class="letters" id="a">A</div>
+                <div class="letters" id="b">B</div>
+                <div class="letters" id="c">C</div>
+                <div class="letters" id="d">D</div>
+                <div class="letters" id="e">E</div>
+                <div class="letters" id="f">F</div>
+                <div class="letters" id="g">G</div>
+                <div class="letters" id="h">H</div>
+                <div class="letters" id="i">I</div>
+                <div class="letters" id="j">J</div>
+                <div class="letters" id="k">K</div>
+                <div class="letters" id="l">L</div>
+                <div class="letters" id="m">M</div>
+                <div class="letters" id="n">N</div>
+                <div class="letters" id="ñ">Ñ</div>
+                <div class="letters" id="o">O</div>
+                <div class="letters" id="p">P</div>
+                <div class="letters" id="q">Q</div>
+                <div class="letters" id="r">R</div>
+                <div class="letters" id="s">S</div>
+                <div class="letters" id="t">T</div>
+                <div class="letters" id="u">U</div>
+                <div class="letters" id="v">V</div>
+                <div class="letters" id="w">W</div>
+                <div class="letters" id="x">X</div>
+                <div class="letters" id="y">Y</div>
+                <div class="letters" id="z">Z</div>
+            </div>
+            <div class="displayQuestions">
+                <p id="questions">Bienvenidos a pasapalabra! Recuerda, para entrar en el ranking debes responder todas las preguntas.</p>
+                <p id="alerts"></p>
+            </div>
+            <div class="containerAnswer">
+                <form action="" id="formAnswer">
+                    <input onfocus="this.value=''" type="text" class="playerInput" id="playerAnswer" autocomplete="off">
+                    <!-- <input type="submit" class="sendAnswer" id="submitAnswer" value="OK"> -->
+                    <button class="sendAnswer" id="submitAnswer" disabled>OK</button>
+                </form>
+                <div class="containerAnswer">
+                    <button class="sendAnswer" id="pasapalabra" disabled>PASAPALABRA</button>
+                    <button class="sendAnswer" id="end" disabled>END</button>
+                </div>
+            </div>
+        </section>
+        <section id="ranking">
+            <h2>Ranking</h2>
+            <div id="playersRanking">
+            </div>
+        </section>
+    </div>
+    <script src= "index.js"></script>
+</body>
+</html>
