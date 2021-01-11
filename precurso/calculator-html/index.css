@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 30px;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr repeat(5, 1fr);
+  width: 200px;
+  height: 300px;
+  min-width: 200px;
+  gap: 1px;
+  background-color: gray;
+  border: 1px solid gray;
+  caret-color: transparent;
+}
+
+.screen {
+  background-color: rgb(51, 51, 70);
+  color: white;
+  grid-column: span 4;
+  padding: 10px;
+  font-family: "Comfortaa", sans-serif;
+  display: grid;
+  grid-template-columns: 190px;
+  grid-template-rows: 0.5fr 1fr;
+  max-height: 65px;
+}
+
+#history {
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-row: 1;
+  font-size: 15px;
+  font-weight: 100;
+  color: lightgray;
+  flex-wrap: nowrap;
+}
+
+#result {
+  margin: 0;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-row: 2;
+  font-size: 25px;
+  font-weight: 100;
+  color: white;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyLong {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  grid-column: span 2;
+}
+
+.number,
+.operator,
+.equal,
+.delete,
+.allCancel {
+  font-family: "Comfortaa", sans-serif;
+  font-size: large;
+  font-weight: 100;
+}
+
+.yellow {
+  background-color: rgb(230, 149, 57);
+  color: white;
+}
+
+.gray {
+  background-color: lightgray;
+  color: black;
+}
+
+.yellow:hover {
+  background-color: rgb(212, 138, 53);
+  cursor: pointer;
+}
+
+.gray:hover {
+  background-color: rgb(187, 187, 187);
+  cursor: pointer;
+}
+
+.yellow:active {
+  background-color: rgb(218, 124, 18);
+  font-size: larger;
+  font-weight: 600;
+}
+
+.gray:active {
+  background-color: rgb(117, 117, 117);
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+}
